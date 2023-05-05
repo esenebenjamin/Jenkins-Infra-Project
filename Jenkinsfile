@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('git clone') {
+        stage('Git Checkout') {
             steps {
-                echo 'Hello World'
+                echo 'Checking out branch'
                 git branch: 'main', url: 'https://github.com/esenebenjamin/Jenkins-Infra-Project.git'
             }
         }
